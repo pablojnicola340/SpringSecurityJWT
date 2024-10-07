@@ -1,0 +1,21 @@
+#Database Configuration
+spring.datasource.url=jdbc:mysql://localhost:3306/securitydb
+spring.datasource.username=root
+spring.datasource.password=root
+
+#Driver de conexion de mysql
+spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
+
+#Aca configuramos el dialecto que va a utilizar mysql
+spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
+
+#Para mostrar por consola las queries sql que va ejecutanto
+spring.jpa.show.sql=true
+
+#Le indicamos a JPA que cree las tablas a partir de nuestros entities
+spring.jpa.hibernate.ddlAuto=create
+
+# JWT
+jwt.secret.key=27f2c165964b29f5bf3640a9048f491a738b8c50f4722bd9f5cf30ee068844f5
+jwt.time.expiration=86400000
+
